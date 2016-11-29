@@ -110,6 +110,7 @@
       setTimeout(timingFooterBuffer, randomInteger(5, 12)*1000);
     }, randomInteger(5, 12)*1000);
 
+
     function footerBuff(el) {
       var b = baffle(el);
         b.start();
@@ -196,19 +197,6 @@
 
       });
 
-      // ARROWS
-      var arrowUp = document.getElementById('arrowUp');
-      var arrowDown = document.getElementById('arrowDown');
-      var headerArrowDown = document.getElementById('headerArrowDown');
-      arrowUp.addEventListener('click', function () {
-        $.fn.fullpage.moveSectionUp();
-      });
-      arrowDown.addEventListener('click', function () {
-        $.fn.fullpage.moveSectionDown();
-      });
-      headerArrowDown.addEventListener('click', function () {
-        $.fn.fullpage.moveSectionDown();
-      });
 
       // WORK STORY TRIGGER
       var storyBtnArr = document.getElementsByClassName('svg-plus-container');

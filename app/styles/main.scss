@@ -117,7 +117,6 @@ Modules - reusable parts of our design
   top: 65%;
   margin-top: -5vw;
   left: 0;
-  z-index: 200;
   overflow: visible;
   opacity: 1;
   transform: rotate(0deg);
@@ -125,6 +124,7 @@ Modules - reusable parts of our design
 
   @include MQ(mobile) {
     display: none;
+    z-index: 200;
   }
   polygon {
     transition: all ease 200ms;
@@ -326,6 +326,12 @@ svg {
   }
   .works__info__arrows-down {
     display: none;
+  }
+
+  .works__info::before {
+    transition: color ease 700ms 300ms, background ease 100ms;
+    color: $colorBlue;
+    background: #FFF;
   }
 }
 
